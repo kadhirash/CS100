@@ -10,7 +10,7 @@ Zay Naing SID: 861167224
 Hello! Welcome to rshell. In this program we will make a basic command shell that can print a command prompt ("$") and read in a line of commands such as "hello".  We can also extend this command by using connectors such as "&&" , "||" , "|" and ";" to make it say "hello && goodbye", as well as certain flags such as "-e", "-f", and "-d" that allows a user to check if a file exists/is a file/is a directory. It uses the test command in rshell to run, which can be interpreted as "[ ]." There will aslo be precedence operators invovled with brackets "( )" that will be combined with other commands. To run the commands, we will be using "execvp" and will always have the format "$ executable [argumentList] [connector] [cmd] ..." We will do this this by using a composite design pattern, which will have rshell as the client, a Base class as the component, a Connectors and Commands classes as the composites, and a "semicolon", "and," , "pipe," and "or" classes as the leaves to the Connectors class.
 
 # Diagram
-![UML Diagram](https://github.com/cs100/assignment-zaddy/blob/master/images/UML%20zaddy.png?raw=true)
+![UML Diagram](https://github.com/kadhirash/CS100/blob/master/assignment-zaddy/images/UML%20zaddy.png)
 # Classes
 ## **rshell**
 This is the client which will start off the entire program by prompting the user to enter a command or commands after displaying a "$" on the terminal. After the user types in their commands, it will read the commands in and execute accordingly.
